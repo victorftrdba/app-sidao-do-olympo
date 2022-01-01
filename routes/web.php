@@ -16,6 +16,10 @@ use App\Http\Controllers\Site\HomeController;
 |
 */
 
+Route::prefix('/')->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('site.home.index');
+});
+
 Route::prefix('/admin')->group(function () {
 
     Route::middleware(['auth'])->group(function () {
@@ -24,8 +28,4 @@ Route::prefix('/admin')->group(function () {
 
     Route::get('/login', [LoginController::class, 'index'])->name('admin.login.index');
 
-});
-
-Route::prefix('/')->group(function () {
-    Route::get('/', [HomeController::class, 'index'])->name('site.home.index');
 });
