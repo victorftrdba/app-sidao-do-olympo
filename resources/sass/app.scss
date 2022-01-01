@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&family=Roboto:wght@300&family=Space+Mono&display=swap');
+
+body, html {
+    overflow-x: hidden;
+}
+
+.--navbar {
+    font-family: 'Press Start 2P',
+    cursive;
+    background: rgb(97, 29, 29) !important;
+
+    .--navbar_title {
+        font-size: .75rem !important;
+        color: white;
+    }
+}
+
+.offcanvas {
+    .--offcanvas_links {
+        font-size: .8rem;
+    }
+
+    .--offcanvas_title {
+        font-size: 1rem;
+    }
+}
+
+.--offcanvas_button {
+    color: white;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+    min-height: 80vh;
+    min-width: 100vw;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(97, 29, 29) !important;
+    height: 12px !important;
+    width: 12px !important;
+}

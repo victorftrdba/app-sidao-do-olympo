@@ -2,6 +2,6 @@
 
 @section('content')
 
-
+@livewire('site.home.index')
 
 @endsection
