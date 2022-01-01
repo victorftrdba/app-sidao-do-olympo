@@ -19,7 +19,7 @@
                         Lista de Postagens
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Última postagem</h5>
+                        <h5 class="card-title">Última postagem adicionada</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="#" class="btn btn-primary fw-bold" style="font-size:0.8rem">Ver lista de postagem <i class="fas fa-eye"></i></a>
                     </div>
