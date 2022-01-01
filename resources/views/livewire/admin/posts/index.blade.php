@@ -10,6 +10,7 @@
         </div>
         <div class="row">
             <div class="col-12">
+                @if(count($posts) > 0)
                 <table class="table-responsive table table-bordered text-center">
                     <thead>
                         <th>Título</th>
@@ -40,6 +41,11 @@
                         @endforeach
                     </tbody>
                 </table>
+                @else
+                <div class="text-center mb-4 fw-bold text-uppercase">
+                    Nenhum resultado encontrado!
+                </div>
+                @endif
                 {{ $posts->links() }}
             </div>
         </div>
