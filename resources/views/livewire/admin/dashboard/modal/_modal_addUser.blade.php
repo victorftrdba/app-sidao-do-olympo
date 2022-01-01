@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+<button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#exampleModal2">
     Adicionar usuário <i class="fas fa-plus-square"></i>
 </button>
 
@@ -28,9 +28,9 @@
                         <input type="password" wire:model="password" class="form-control" />
                     </div>
 
-                    <div>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Adicionar</button>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-secondary me-2 rounded-0" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary rounded-0">Adicionar</button>
                     </div>
                 </form>
 

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Site\HomeController;
 
 /*
@@ -24,6 +25,8 @@ Route::prefix('/admin')->group(function () {
 
     Route::middleware(['auth'])->group(function () {
         Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard.index');
+        Route::get('/postagens', [PostController::class, 'index'])->name('admin.posts.index');
+        Route::get('/postagens/editar/{id}', [PostController::class, 'edit'])->name('admin.posts.edit');
     });
 
     Route::get('/login', [LoginController::class, 'index'])->name('admin.login.index');
