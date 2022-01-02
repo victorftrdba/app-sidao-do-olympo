@@ -21,7 +21,7 @@
                     <a href="#" class="text-reset"></a>
                     <a href="#" class="text-reset"></a>
                     <a href="#" class="text-reset"></a>
-                    <a href="https://www.youtube.com/channel/UCtlxTaU36_RoCnMJcne5GPg" target="_blank" class="text-reset"><i class="fab fa-lg fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/channel/UCtlxTaU36_RoCnMJcne5GPg" target="_blank" class="d-flex align-items-center text-reset text-decoration-none"><i class="fab fa-lg fa-youtube"></i> &nbsp;Canal</a>
                 </div>
                 @enddesktop
                 @mobile

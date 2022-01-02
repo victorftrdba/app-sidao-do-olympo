@@ -41,12 +41,17 @@
 
                             @empty
 
+                            Nenhuma postagem recente encontrada!
+
                             @endforelse
                         </div>
                         <div class="d-flex justify-content-center align-items-center mt-2">
                             <div class="--posts_swiper-pagination"></div>
                         </div>
                     </div>
+                </div>
+                <div class="col-6 mt-5 text-center mb-5">
+                    <a href="https://www.youtube.com/channel/UCtlxTaU36_RoCnMJcne5GPg" target="_blank" class="rainbow rainbow-1 shadow p-3 text-decoration-none text-reset">CONHEÇA MEU CANAL!</a>
                 </div>
             </div>
         </div>

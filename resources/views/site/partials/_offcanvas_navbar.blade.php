@@ -8,7 +8,7 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body --offcanvas_links">
-            ...
+            <a href="https://www.youtube.com/channel/UCtlxTaU36_RoCnMJcne5GPg" target="_blank" class="d-flex align-items-center text-reset text-decoration-none"><i class="fab fa-lg fa-youtube"></i> &nbsp;Canal</a>
         </div>
     </div>
 
