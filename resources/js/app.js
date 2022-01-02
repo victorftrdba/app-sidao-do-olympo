@@ -17,6 +17,7 @@ var mySwiper = new Swiper('.--posts_swiper', {
     speed: 1500,
     grabCursor: true,
     direction: 'horizontal',
+    initialSlide: 1,
     autoplay: {
         delay: 2000,
         pauseOnMouseEnter: true,
