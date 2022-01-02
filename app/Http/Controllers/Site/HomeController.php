@@ -12,6 +12,7 @@ class HomeController extends Controller
         $this->seo()->setTitle('Sidão do Olympo');
         $this->seo()->setDescription('Gameplays ao vivo de vários jogos em alta qualidade!');
         $this->seo()->opengraph()->addProperty('type', 'articles');
+        $this->seo()->opengraph()->setUrl($request->url());
         $this->seo()->setCanonical($request->url());
 
         return view('site.home.index');
