@@ -4,8 +4,79 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c765c27e1690a4fbb7b3fb37304ad862",
+    "content-hash": "0a82c60b968a866627be67c2f34bd181",
     "packages": [
+        {
+            "name": "artesaos/seotools",
+            "version": "v0.20.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artesaos/seotools.git",
+                "reference": "94fbb3b331dab7433b335a9aafd74a312a5525fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artesaos/seotools/zipball/94fbb3b331dab7433b335a9aafd74a312a5525fe",
+                "reference": "94fbb3b331dab7433b335a9aafd74a312a5525fe",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/config": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+                "illuminate/support": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.8.4 || ^4.0 || ^5.0",
+                "phpspec/phpspec": "~5.1.1 || ^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider"
+                    ],
+                    "aliases": {
+                        "SEOMeta": "Artesaos\\SEOTools\\Facades\\SEOMeta",
+                        "OpenGraph": "Artesaos\\SEOTools\\Facades\\OpenGraph",
+                        "Twitter": "Artesaos\\SEOTools\\Facades\\TwitterCard",
+                        "JsonLd": "Artesaos\\SEOTools\\Facades\\JsonLd",
+                        "SEO": "Artesaos\\SEOTools\\Facades\\SEOTools"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Artesaos\\SEOTools\\": "src/SEOTools/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vinicius",
+                    "email": "luiz.vinicius73@gmail.com"
+                }
+            ],
+            "description": "SEO Tools for Laravel and Lumen",
+            "keywords": [
+                "JSON-LD",
+                "laravel",
+                "lumen",
+                "metatags",
+                "opengraph",
+                "seo",
+                "seotools",
+                "webmaster"
+            ],
+            "support": {
+                "issues": "https://github.com/artesaos/seotools/issues",
+                "source": "https://github.com/artesaos/seotools"
+            },
+            "time": "2021-09-29T14:39:51+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -1796,6 +1867,77 @@
                 }
             ],
             "time": "2021-12-10T19:37:40+00:00"
+        },
+        {
+            "name": "mad-web/laravel-robots",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mad-web/laravel-robots.git",
+                "reference": "a5e04499dc290898b69658ed6ee27742b57c15a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mad-web/laravel-robots/zipball/a5e04499dc290898b69658ed6ee27742b57c15a0",
+                "reference": "a5e04499dc290898b69658ed6ee27742b57c15a0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0 || ^7.0 || ^8.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^4.0 || ^5.0 || ^6.0",
+                "phpunit/phpunit": "^8.0 || ^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MadWeb\\Robots\\RobotsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Robots": "MadWeb\\Robots\\RobotsFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MadWeb\\Robots\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mad-web",
+                    "email": "madweb.dev@gmail.com",
+                    "homepage": "https://github.com/mad-web",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Robots.txt generator service.",
+            "homepage": "https://github.com/mad-web/laravel-robots",
+            "keywords": [
+                "laravel-robots",
+                "mad-web",
+                "robots",
+                "seo"
+            ],
+            "support": {
+                "issues": "https://github.com/mad-web/laravel-robots/issues",
+                "source": "https://github.com/mad-web/laravel-robots/tree/3.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/mad-web",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-18T14:08:21+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",

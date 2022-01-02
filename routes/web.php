@@ -32,3 +32,5 @@ Route::prefix('/admin')->group(function () {
     Route::get('/login', [LoginController::class, 'index'])->name('admin.login.index');
 
 });
+
+Route::get('/robots.txt', 'RobotsController@index');
