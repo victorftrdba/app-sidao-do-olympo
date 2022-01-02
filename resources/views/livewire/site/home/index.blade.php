@@ -30,6 +30,7 @@
                     <div class="--posts_swiper mt-5 mb-5">
                         <div class="swiper-wrapper">
                             @forelse($posts as $post)
+
                             <div
                                 class="swiper-slide d-flex align-items-center justify-content-end flex-column" @if ($post->image !== null) style="background:{{ asset('storage/'.$post->image) }}" @endif>
                                 {!! $post->iframe !!}
@@ -41,7 +42,9 @@
 
                             @empty
 
+                        <div class="swiper-slide d-flex align-items-center justify-content-center flex-column">
                             Nenhuma postagem recente encontrada!
+                        </div>
 
                             @endforelse
                         </div>
@@ -50,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 mt-5 text-center mb-5">
+                <div class="col-12 mt-5 text-center mb-5">
                     <a href="https://www.youtube.com/channel/UCtlxTaU36_RoCnMJcne5GPg" target="_blank" class="rainbow rainbow-1 shadow p-3 text-decoration-none text-reset">CONHEÇA MEU CANAL!</a>
                 </div>
             </div>
