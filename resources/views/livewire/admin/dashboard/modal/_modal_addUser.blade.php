@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-secondary me-2 rounded-0" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-secondary me-2 rounded-0" data-bs-dismiss="modal">Fechar</button>
                         <button type="submit" class="btn btn-primary rounded-0">Adicionar</button>
                     </div>
                 </form>

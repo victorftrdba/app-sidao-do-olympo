@@ -8,14 +8,22 @@
 
                 @include('livewire.admin.dashboard.modal._modal_addPost')
 
+                @mobile
+                    <br><br>
+                @endmobile
+
                 @include('livewire.admin.dashboard.modal._modal_addUser')
+
+                @mobile
+                    <br><br>
+                @endmobile
 
                 <button type="button" class="btn btn-danger rounded-0" wire:click="logout">Logout <i class="fas fa-sign-out-alt"></i></button>
 
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="card text-center">
                     <div class="card-header">
                         Lista de Postagens
@@ -30,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
                 <div class="card text-center">
                     <div class="card-header">
                         Lista de Usuários

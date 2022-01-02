@@ -1,17 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&family=Roboto:wght@300&family=Space+Mono&display=swap');
 
-body, html {
+body,
+html {
     overflow-x: hidden;
 }
 
 .--navbar {
     font-family: 'Press Start 2P',
-    cursive;
+        cursive;
     background: rgb(97, 29, 29) !important;
+    z-index:999;
 
     .--navbar_title {
         font-size: .75rem !important;
         color: white;
+
+        @media(max-width: 768px) {
+            font-size: .6rem !important;
+            position: relative;
+
+            .--navbar_bar {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: white;
+                border: 1px solid white;
+            }
+        }
     }
 }
 
@@ -27,15 +43,83 @@ body, html {
 
 .--offcanvas_button {
     color: white;
+
+    @media (max-width: 768px) {
+        font-size: .6rem;
+    }
 }
 
-.swiper .swiper-wrapper .swiper-slide {
-    min-height: 80vh;
-    min-width: 100vw;
+.--hero_image {
+    .swiper .swiper-wrapper .swiper-slide {
+        min-height: 80vh;
+        min-width: 100vw;
+    }
+
+    .swiper-pagination {
+        bottom: 20px !important;
+
+        @media(min-width: 1400px) {
+            bottom: 50px !important;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background: rgb(97, 29, 29) !important;
+        height: 12px !important;
+        width: 12px !important;
+    }
 }
 
-.swiper-pagination-bullet-active {
-    background: rgb(97, 29, 29) !important;
-    height: 12px !important;
-    width: 12px !important;
+.--posts_main {
+    margin-top: 100px;
+
+    .--posts_swiper {
+        width: 100%;
+        height: 400px;
+
+        iframe {
+            width: 90%;
+            height: 400px;
+        }
+    }
+
+    .--posts_swiper-pagination {
+        bottom: 20px !important;
+
+        @media(min-width: 1400px) {
+            bottom: 50px !important;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background: rgb(97, 29, 29) !important;
+        height: 12px !important;
+        width: 12px !important;
+    }
+}
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+        z-index: 1;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1 !important;
 }

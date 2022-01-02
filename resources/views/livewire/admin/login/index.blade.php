@@ -13,12 +13,12 @@
 
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-md-3">
                 <label class="mb-2" for="email">E-mail</label>
                 <input type="email" wire:model="email" class="form-control" />
             </div>
 
-            <div class="col-3 mb-4">
+            <div class="col-12 col-md-3 mb-4">
                 <label class="mb-2" for="password">Senha</label>
                 <input type="password" wire:model="password" class="form-control" />
             </div>

@@ -1,2 +1,114 @@
 @import url(https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&family=Roboto:wght@300&family=Space+Mono&display=swap);
-body,html{overflow-x:hidden}.--navbar{background:#611d1d!important;font-family:Press Start\ 2P,cursive}.--navbar .--navbar_title{color:#fff;font-size:.75rem!important}.offcanvas .--offcanvas_links{font-size:.8rem}.offcanvas .--offcanvas_title{font-size:1rem}.--offcanvas_button{color:#fff}.swiper .swiper-wrapper .swiper-slide{min-height:80vh;min-width:100vw}.swiper-pagination-bullet-active{background:#611d1d!important;height:12px!important;width:12px!important}
+body,
+html {
+  overflow-x: hidden;
+}
+
+.--navbar {
+  font-family: "Press Start 2P", cursive;
+  background: #611d1d !important;
+  z-index: 999;
+}
+.--navbar .--navbar_title {
+  font-size: 0.75rem !important;
+  color: white;
+}
+@media (max-width: 768px) {
+  .--navbar .--navbar_title {
+    font-size: 0.6rem !important;
+    position: relative;
+  }
+  .--navbar .--navbar_title .--navbar_bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+    border: 1px solid white;
+  }
+}
+
+.offcanvas .--offcanvas_links {
+  font-size: 0.8rem;
+}
+.offcanvas .--offcanvas_title {
+  font-size: 1rem;
+}
+
+.--offcanvas_button {
+  color: white;
+}
+@media (max-width: 768px) {
+  .--offcanvas_button {
+    font-size: 0.6rem;
+  }
+}
+
+.--hero_image .swiper .swiper-wrapper .swiper-slide {
+  min-height: 80vh;
+  min-width: 100vw;
+}
+.--hero_image .swiper-pagination {
+  bottom: 20px !important;
+}
+@media (min-width: 1400px) {
+  .--hero_image .swiper-pagination {
+    bottom: 50px !important;
+  }
+}
+.--hero_image .swiper-pagination-bullet-active {
+  background: #611d1d !important;
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.--posts_main {
+  margin-top: 100px;
+}
+.--posts_main .--posts_swiper {
+  width: 100%;
+  height: 400px;
+}
+.--posts_main .--posts_swiper iframe {
+  width: 90%;
+  height: 400px;
+}
+.--posts_main .--posts_swiper-pagination {
+  bottom: 20px !important;
+}
+@media (min-width: 1400px) {
+  .--posts_main .--posts_swiper-pagination {
+    bottom: 50px !important;
+  }
+}
+.--posts_main .swiper-pagination-bullet-active {
+  background: #611d1d !important;
+  height: 12px !important;
+  width: 12px !important;
+}
+
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  z-index: 1;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+  z-index: 1;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1 !important;
+}
