@@ -28,7 +28,7 @@
                 <div class="col text-center">
                     <h2 class="text-uppercase fw-bold">Últimas postagens</h2>
                     <div class="--posts_swiper mt-5 mb-5">
-                        <div class="swiper-wrapper" wire:ignore.self>
+                        <div class="swiper-wrapper">
                             @forelse($posts as $post)
 
                             <div
