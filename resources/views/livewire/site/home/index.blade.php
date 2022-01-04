@@ -33,8 +33,10 @@
 
                             <div
                                 class="swiper-slide d-flex align-items-center justify-content-end flex-column" @if ($post->image !== null) style="background:{{ asset('storage/'.$post->image) }}" @endif>
+                                @if ($post->image !== null)
                                 <h2>{{ $post->title }}</h2>
                                 {!! $post->iframe !!}
+                                @endif
                                 @if ($post->image !== null)
                                 <h2>{{ $post->title }}</h2>
                                 <p>{{ $post->description }}</p>
